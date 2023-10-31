@@ -60,6 +60,9 @@ let title = document.getElementById("titleTag")
 let subSubTitle = document.createElement("h6")
 subSubTitle.innerText = "Je suis un sous sous titre de la page fait en JS par un gros pignouf"
 subSubTitle.classList.add("header", "col", "s12", "light")
+
+if(subSubTitle.classList.contains("header")) console.log(true)//renvoie true si la classe est contenue dans la list...
+
 console.log(subSubTitle)
 console.log(title.nextElementSibling.lastElementChild)
 title.nextElementSibling.lastElementChild.appendChild(subSubTitle)
@@ -138,6 +141,10 @@ console.log(allBody.textContent)
 
 
 console.clear() 
+//############################################################################
+// Append After Before
+//############################################################################
+
 
 
 let navbarMain = document.getElementById("navbarMain")
@@ -169,7 +176,11 @@ pIconCopyright.innerHTML = "&copy; Copyright Techno Net Sécu 2"
 
 footerCopy.insertBefore(pIconCopyright, footerCopy.firstChild)
 
+
 console.clear()
+//############################################################################
+// Insert Adjacent HTML
+//############################################################################
 
 
 
@@ -214,6 +225,10 @@ parentLogo.replaceChild(newImage, logoContainer)
 
 console.clear()
 
+//############################################################################
+// suppression d'un enfant
+//############################################################################
+
 
 let downloadButton = document.getElementById("download-button")
 let downloadButtonParent = downloadButton.parentNode
@@ -221,6 +236,10 @@ downloadButtonParent.removeChild(downloadButton)
 
 console.clear()
 
+
+//############################################################################
+// CRUD sur attribu
+//############################################################################
 
 let myInput = document.getElementById("myInput")
 console.log(myInput.getAttribute("type"))
